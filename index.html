@@ -85,5 +85,35 @@
                     </div>
                 </div>
             </div>
+
+                       <!-- CHECKOUT PAGE -->
+                       <div v-else>
+                        <div class="row mt-1">
+                            <div class="col-10">
+                                <h1 class="text-center">Checkout</h1>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-success" v-on:click="showCheckout">{{cartItemCount}} Activities</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item" v-for="lesson in cart">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img v-bind:src="lesson.image" style="height: 30px;width: 30px;">
+                                            </div>
+                                            <div class="col-6">
+                                                <p>{{lesson.subject}}</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <span style="cursor: pointer;" class="text-danger" v-on:click="removeFromCart(lesson)" ><b>x</b></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 </body>
 </html>
