@@ -60,5 +60,30 @@
                                 </label><br>
                             </fieldset>
     
+                        </div>
+                        <div class="col-10 pl-0 pr-3">
+                            <div class="row">
+                                <div class="col-3 mb-3" v-for="lesson in sortedLessons(sort, ord)">
+                                    <div class="card border-success">
+                                        <img v-bind:src="lesson.image" style="height: 200px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" v-text="lesson.subject"></h5>
+                                            <p>Location: {{lesson.location}}</p>
+                                            <p>Price: {{lesson.price}}</p>
+                                            <p>Number of spaces: {{lesson.availableInventory - cartCount(lesson)}}</p>
+                                            <button v-on:click="addToCart(lesson)" v-if="canAddToCart(lesson)" class="btn btn-block btn-success">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn btn-secondary btn-block disabled" v-else>
+                                                Out of Space
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 </html>
