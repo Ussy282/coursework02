@@ -147,6 +147,25 @@
                         sort: "subj",
                         ord: "asc"
                     },
+                    created: function (){
+                        console.log('requesting data from server ...')
+
+                        fetch('https://mamman-cst3145.herokuapp.com/collection/products', {
+                            method: "GET",
+                            headers: {
+                                "Content-Type": "text/plain"
+                            }
+                        }).then(
+                            function (response) {
+                                response.json().then(
+                                    function (json){
+                                        Webstore.products = json;
+                                        console.log(json);
+                                    }
+                                )
+                            }
+                        )
+                    },
                     methods: {
                         addToCart: function (lesson) {
                             this.cart.push(lesson);
