@@ -137,7 +137,7 @@
                     el: "#app",
                     data: {
                         sitename: "Activity Store",
-                        lessons: lessons,
+                        lessons: [],
                         cart: [],
                         order: {
                             fullname: '',
@@ -159,7 +159,7 @@
                             function (response) {
                                 response.json().then(
                                     function (json){
-                                        Webstore.products = json;
+                                        lessonStore.lesson = json;
                                         console.log(json);
                                     }
                                 )
