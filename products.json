@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "620ee3338d8a2ca83c91461f"
+  },
+  "subject": "Art",
+  "location": "Paris",
+  "price": 250,
+  "image": "img/art.jpg",
+  "availableInventory": 5,
+  "rating": 4
+},{
+  "_id": {
+    "$oid": "620ee3578d8a2ca83c914621"
+  },
+  "subject": "Physics",
+  "location": "Houston",
+  "price": 200,
+  "image": "img/physics.jpg",
+  "availableInventory": 5,
+  "rating": 5
+},{
+  "_id": {
+    "$oid": "620ee3808d8a2ca83c914623"
+  },
+  "subject": "English",
+  "location": "Houston",
+  "price": 150,
+  "image": "img/english.jpg",
+  "availableInventory": 5,
+  "rating": 3
+},{
+  "_id": {
+    "$oid": "620ee3a38d8a2ca83c914625"
+  },
+  "subject": "Math",
+  "location": "Dubai",
+  "price": 200,
+  "image": "img/math.jpg",
+  "availableInventory": 5,
+  "rating": 4
+},{
+  "_id": {
+    "$oid": "620f0eafe3896db560663d0b"
+  },
+  "id": 1200,
+  "title": "cat home",
+  "price": 3000
+},{
+  "_id": {
+    "$oid": "620f0fd9e3896db560663d0f"
+  },
+  "subject": "Gymnastics",
+  "location": "London",
+  "price": 350,
+  "image": "img/gymn.jpg",
+  "availableInventory": 5,
+  "rating": 5
+},{
+  "_id": {
+    "$oid": "62102a4c9aa5471951038f7a"
+  },
+  "subject": "Psychology",
+  "location": "Dubai",
+  "price": 170,
+  "image": "img/psychology.jpg",
+  "availableInventory": 5,
+  "rating": 3
+}]
